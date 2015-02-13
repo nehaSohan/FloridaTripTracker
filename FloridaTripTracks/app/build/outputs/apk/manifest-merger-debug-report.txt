@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:7
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:4:31
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:7
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:5:1
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.google.android.gms:play-services:6.5.87:18:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:5:38
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:5:11
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+supports-screens
+ADDED from AndroidManifest.xml:7:1
+	android:anyDensity
+		ADDED from AndroidManifest.xml:7:48
+	android:normalScreens
+		ADDED from AndroidManifest.xml:7:19
+permission#com.urs.triptracks.permission.MAPS_RECEIVE
+ADDED from AndroidManifest.xml:9:1
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:11:9
+	android:name
+		ADDED from AndroidManifest.xml:10:9
+uses-feature#0x00020000
+ADDED from AndroidManifest.xml:13:5
+	android:required
+		ADDED from AndroidManifest.xml:15:9
+	android:glEsVersion
+		ADDED from AndroidManifest.xml:14:9
+uses-permission#com.urs.triptracks.permission.MAPS_RECEIVE
+ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:23:5
+	android:name
+		ADDED from AndroidManifest.xml:23:22
+application
+ADDED from AndroidManifest.xml:26:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.google.android.gms:play-services:6.5.87:20:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+	android:label
+		ADDED from AndroidManifest.xml:26:18
+	android:icon
+		ADDED from AndroidManifest.xml:26:51
+activity#com.urs.triptracks.MainInput
+ADDED from AndroidManifest.xml:27:9
+	android:label
+		ADDED from AndroidManifest.xml:27:19
+	android:name
+		ADDED from AndroidManifest.xml:27:52
+	android:launchMode
+		ADDED from AndroidManifest.xml:27:96
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:28:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:29:17
+	android:name
+		ADDED from AndroidManifest.xml:29:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:30:17
+	android:name
+		ADDED from AndroidManifest.xml:30:27
+activity#com.urs.triptracks.RecordingActivity
+ADDED from AndroidManifest.xml:34:6
+	android:label
+		ADDED from AndroidManifest.xml:34:16
+	android:name
+		ADDED from AndroidManifest.xml:34:56
+	android:finishOnTaskLaunch
+		ADDED from AndroidManifest.xml:34:89
+	android:launchMode
+		ADDED from AndroidManifest.xml:34:123
+activity#com.urs.triptracks.SaveTrip
+ADDED from AndroidManifest.xml:36:3
+	android:name
+		ADDED from AndroidManifest.xml:36:13
+	android:finishOnTaskLaunch
+		ADDED from AndroidManifest.xml:36:37
+	android:launchMode
+		ADDED from AndroidManifest.xml:36:71
+activity#com.urs.triptracks.ShowMap
+ADDED from AndroidManifest.xml:38:3
+	android:name
+		ADDED from AndroidManifest.xml:38:13
+	android:finishOnTaskLaunch
+		ADDED from AndroidManifest.xml:38:36
+	android:launchMode
+		ADDED from AndroidManifest.xml:38:70
+activity#com.urs.triptracks.UserInfoActivity
+ADDED from AndroidManifest.xml:39:3
+	android:name
+		ADDED from AndroidManifest.xml:39:13
+	android:finishOnTaskLaunch
+		ADDED from AndroidManifest.xml:39:45
+	android:launchMode
+		ADDED from AndroidManifest.xml:39:79
+service#com.urs.triptracks.RecordingService
+ADDED from AndroidManifest.xml:40:3
+	android:exported
+		ADDED from AndroidManifest.xml:40:67
+	android:enabled
+		ADDED from AndroidManifest.xml:40:44
+	android:name
+		ADDED from AndroidManifest.xml:40:12
+uses-library#com.google.android.maps
+ADDED from AndroidManifest.xml:41:3
+	android:name
+		ADDED from AndroidManifest.xml:41:17
+meta-data#com.google.android.maps.v2.API_KEY
+ADDED from AndroidManifest.xml:45:9
+	android:name
+		ADDED from AndroidManifest.xml:46:13
+	android:value
+		ADDED from AndroidManifest.xml:47:13
+meta-data#com.google.android.gms.version
+ADDED from com.google.android.gms:play-services:6.5.87:21:9
+	android:name
+		ADDED from com.google.android.gms:play-services:6.5.87:22:13
+	android:value
+		ADDED from com.google.android.gms:play-services:6.5.87:23:13

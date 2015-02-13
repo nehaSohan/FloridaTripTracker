@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout
+		    android:id="@+id/LinearLayout02"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:orientation="vertical" >
+
+		    <TextView
+		        android:id="@+id/TextView01"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15sp"
+		        android:text="Finished recording.  \n1.  What is the MAIN PURPOSE of your stop?"
+		        android:textStyle="bold"/>		    
+
+		    <TableLayout
+		        android:id="@+id/TableLayout01"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" >
+
+		        <TableRow
+		            android:id="@+id/TableRow00"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="2sp"
+		            android:layout_marginRight="4sp" >
+
+		            <ToggleButton
+		                android:id="@+id/ToggleCommute"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="0.7"
+		                android:drawableTop="@drawable/commute"
+		                android:textOff="My home"
+		                android:textOn="My home"
+		                android:textSize="11sp" />
+
+		            <ToggleButton
+		                android:id="@+id/ToggleWorkRel"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:drawableTop="@drawable/workrel"
+		                android:textOff="My work (including volunteer work)"
+		                android:textOn="My work (including volunteer work)"
+		                android:textSize="11sp" />
+		        </TableRow>
+
+		        <TableRow
+		            android:id="@+id/TableRow01"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="2sp"
+		            android:layout_marginRight="4sp" >
+
+		            <ToggleButton
+		                android:id="@+id/ToggleExercise"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.7"
+		                android:drawableTop="@drawable/exercise"
+		                android:textOff="Recreation (personal sports, gym)"
+		                android:textOn="Recreation (personal sports, gym)"
+		                android:textSize="11sp" />
+
+		            <ToggleButton
+		                android:id="@+id/ToggleShopping"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="1"
+		                android:drawableTop="@drawable/shopping"
+		                android:textOff="Shopping/Errands"
+		                android:textOn="Shopping/Errands"
+		                android:textSize="11sp" />
+		        </TableRow>
+
+		        <TableRow
+		            android:id="@+id/TableRow02"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="2sp"
+		            android:layout_marginRight="4sp" >
+
+		            <ToggleButton
+		                android:id="@+id/ToggleErrand"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="0.7"
+		                android:drawableTop="@drawable/errands"
+		                android:textOff="Friend&apos;s or relative&apos;s home"
+		                android:textOn="Friend&apos;s or relative&apos;s home"
+		                android:textSize="11sp" />
+
+		            <ToggleButton
+		                android:id="@+id/ToggleSocial"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:drawableTop="@drawable/social"
+		                android:nextFocusDown="@+id/NotesField"
+		                android:nextFocusUp="@+id/ToggleCommute"
+		                android:textOff="Meal/Dining Out"
+		                android:textOn="Meal/Dining Out"
+		                android:textSize="11sp" />
+		        </TableRow>
+
+		        <TableRow
+		            android:id="@+id/TableRow03"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="2sp"
+		            android:layout_marginRight="4sp" >
+
+		            <ToggleButton
+		                android:id="@+id/ToggleSchool"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="0.7"
+		                android:drawableTop="@drawable/school"
+		                android:textOff="School"
+		                android:textOn="School"
+		                android:textSize="11sp" />
+
+		            <ToggleButton
+		                android:id="@+id/ToggleCollege"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:drawableTop="@drawable/school"
+		                android:nextFocusDown="@+id/NotesField"
+		                android:nextFocusUp="@+id/ToggleCommute"
+		                android:textOff="College"
+		                android:textOn="College"
+		                android:textSize="11sp" />
+		        </TableRow>
+		        
+		        <TableRow
+		            android:id="@+id/TableRow04"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="2sp"
+		            android:layout_marginRight="4sp" >
+
+		            <ToggleButton
+		                android:id="@+id/ToggleDaycare"
+		                android:layout_width="wrap_content"
+		                android:layout_height="fill_parent"
+		                android:layout_weight="0.7"
+		                android:drawableTop="@drawable/school"
+		                android:textOff="Daycare"
+		                android:textOn="Daycare"
+		                android:textSize="11sp" />
+
+		            <ToggleButton
+		                android:id="@+id/ToggleOther"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:drawableTop="@drawable/other"
+		                android:textOff="Other"
+		                android:textOn="Other"
+		                android:textSize="11sp" />
+		        </TableRow>
+		    </TableLayout>
+		    <TextView
+		        android:id="@+id/TextPurpDescription"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5sp"
+		        android:bufferType="spannable"
+		        android:lines="3"
+		        android:paddingBottom="2sp"
+		        android:paddingTop="4sp"
+		        android:text="     "
+		        android:textSize="14sp" />
+		    <EditText android:bufferType="editable"
+				android:layout_width="fill_parent"
+				android:selectAllOnFocus="true" android:layout_height="fill_parent"
+				android:id="@+id/NotesField" android:layout_marginTop="10sp"
+				android:inputType="text" android:hint="Please Type Other Trip Purpose Here"
+				android:layout_marginRight="2sp" android:layout_marginLeft="2sp"
+				android:imeOptions="actionDone"></EditText>
+		    
+
+		    <TextView
+		        android:id="@+id/TextViewTraveledBy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15sp"
+		        android:text="2. I traveled by:"
+		        android:textStyle="bold"/>
+
+		    <RadioGroup
+		        android:id="@+id/RadioGroupTraveledBy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginLeft="20sp"
+		        android:layout_marginRight="10sp"
+		        android:layout_weight="2"
+		        android:orientation="vertical" >
+
+		        <RadioButton
+		            android:id="@+id/RadioButtonTraveledBy1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="17dp"
+		            android:text="Car, truck, van or motorcycle" 
+		            android:textSize="14sp"
+		            android:textStyle="bold"/>
+
+		        <RadioButton
+		            android:id="@+id/RadioButtonTraveledBy2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="17dp"
+		            android:text="City/public bus/shuttle—routes, transfers, boarding/alighting locations" 
+		            android:textSize="14sp"
+		            android:textStyle="bold"/>
+
+		        <RadioButton
+		            android:id="@+id/RadioButtonTraveledBy3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="17dp"
+		            android:text="School bus" 
+		            android:textSize="14sp"
+		            android:textStyle="bold"/>
+
+		        <RadioButton
+		            android:id="@+id/RadioButtonTraveledBy4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="17dp"
+		            android:text="Walk" 
+		            android:textSize="14sp"
+		            android:textStyle="bold"/>
+
+		        <RadioButton
+		            android:id="@+id/RadioButtonTraveledBy5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="17dp"
+		            android:text="Bicycle" 
+		            android:textSize="14sp"
+		            android:textStyle="bold"/>
+
+		        <RadioButton
+		            android:id="@+id/RadioButtonTraveledBy6"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="17dp"
+		            android:text="Carpool" 
+		            android:textSize="14sp"
+		            android:textStyle="bold"/>		        	
+
+		        <RadioButton
+		            android:id="@+id/RadioButtonTraveledBy7"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="17dp"
+		            android:text="Other"
+		            android:textSize="14sp"
+		            android:textStyle="bold" />
+		    </RadioGroup>
+		    
+		    
+
+		    <TextView
+		        android:id="@+id/TextViewHouseHold"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15sp"
+		        android:text="3. How many household memebers traveled with you?"
+		        android:textStyle="bold" />
+
+		        <EditText
+		            android:id="@+id/EditTextHouseHold"
+		            android:layout_width="101dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="18sp"
+		            android:bufferType="editable"
+		            android:inputType="number"
+		            android:selectAllOnFocus="true"
+		            android:textSize="14sp"
+		            android:textStyle="bold"
+		            android:imeOptions="actionDone" />
+
+		    <TextView
+		        android:id="@+id/TextViewNoHouseHold"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15sp"
+		        android:text="4. How many traveled with you who are NOT household members?"
+		        android:textStyle="bold" />
+
+		        <EditText
+		            android:id="@+id/EditTextNoHouseHold"
+		            android:layout_width="101dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="18sp"
+		            android:bufferType="editable"
+		            android:inputType="number"
+		            android:selectAllOnFocus="true"
+		            android:textSize="14sp"
+		            android:textStyle="bold"
+		            android:imeOptions="actionDone" >
+
+		        </EditText>
+
+		    
+		    
+		<TextView
+		    android:id="@+id/TextViewDelay"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="5. Did you encounter any delays associated with an accident or road construction?"
+		    android:textStyle="bold" >
+		</TextView>
+		<RadioGroup android:id="@+id/RadioGroupDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+		    <RadioButton
+		        android:id="@+id/ButtonDelayYes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Yes"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonDelayNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonDelayYes"
+		        android:text="No"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+		</RadioGroup>
+		
+		<TextView
+		    android:id="@+id/TextViewPayToll"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="6.  Did you pay a toll for this trip?"
+		    android:textStyle="bold" >
+		</TextView>
+		<RadioGroup android:id="@+id/RadioGroupPayToll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+		    <RadioButton
+		        android:id="@+id/ButtonPayTollYes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Yes"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonPayTollNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonPayTollYes"
+		        android:text="No"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+		</RadioGroup>
+
+		<LinearLayout
+		    android:id="@+id/LinearLayoutFarePayToll"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="10sp" >
+
+		<TextView
+		    android:id="@+id/TextViewFareDollarPayToll"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="Enter Amount:  $"
+		    android:textStyle="bold" >
+		</TextView>
+		<EditText android:ems="10" android:id="@+id/EditTextFarePayToll" 
+		    android:layout_width="152dp" android:layout_height="wrap_content" 
+		    android:bufferType="editable" android:cursorVisible="true" 
+		    android:inputType="numberDecimal" 
+		    android:selectAllOnFocus="true"
+		    android:imeOptions="actionDone"/>
+		</LinearLayout>
+		    
+		<TextView
+		    android:id="@+id/TextViewPayParking"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="7.  Did you pay for parking for this trip?"
+		    android:textStyle="bold" >
+		</TextView>
+		<RadioGroup android:id="@+id/RadioGroupPayParking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+		    <RadioButton
+		        android:id="@+id/ButtonPayParkingYes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Yes"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonPayParkingNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonPayParkingYes"
+		        android:text="No"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+		</RadioGroup>
+		<LinearLayout
+		        android:id="@+id/LinearLayoutFarePayParking"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10sp" >
+		<TextView
+		    android:id="@+id/TextViewFareDollarPayParking"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="Enter Amount:  $"
+		    android:textStyle="bold" >
+		</TextView>
+		<EditText android:ems="10" android:id="@+id/EditTextFarePayParking" 
+		    android:layout_width="152dp" android:layout_height="wrap_content" 
+		    android:bufferType="editable" android:cursorVisible="true" 
+		    android:inputType="numberDecimal" 
+		    android:selectAllOnFocus="true"
+		    android:imeOptions="actionDone"/>
+		</LinearLayout>
+		
+		<TextView
+		    android:id="@+id/TextViewFare"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="8. How much was your fare if you used a city/public bus/shuttle?"
+		    android:textStyle="bold" >
+		</TextView>
+		<LinearLayout
+		        android:id="@+id/LinearLayoutFare"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10sp" >
+		<TextView
+		    android:id="@+id/TextViewFareDollar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="$"
+		    android:textStyle="bold" >
+		</TextView>
+		<EditText android:ems="10" android:id="@+id/EditTextFare" 
+		    android:layout_width="152dp" android:layout_height="wrap_content" 
+		    android:bufferType="editable" android:cursorVisible="true" 
+		    android:inputType="numberDecimal" 
+		    android:selectAllOnFocus="true"
+		    android:imeOptions="actionDone"/>
+		</LinearLayout>
+		
+
+		    
+
+		    
+
+		    <Button
+		        android:id="@+id/ButtonPrefs"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5sp"
+		        android:drawableLeft="@android:drawable/ic_menu_info_details"
+		        android:text="Click Here to enter USER info correctly!"
+		        android:textSize="18sp"
+		        android:textStyle="bold"
+		        android:textColor="#f00" />
+
+		    <LinearLayout
+		        android:id="@+id/LinearLayoutButtonDiscard"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10sp" >
+
+		        <Button
+		            android:id="@+id/ButtonDiscard"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+		            android:text="Discard"
+		            android:textSize="18sp"
+		            android:textStyle="bold" />
+
+		        <Button
+		            android:id="@+id/ButtonSubmit"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:drawableLeft="@android:drawable/ic_menu_save"
+		            android:text="Submit"
+		            android:textSize="18sp"
+		            android:textStyle="bold" />
+		    </LinearLayout>
+		</LinearLayout>
+
+	</RelativeLayout>
+</ScrollView>

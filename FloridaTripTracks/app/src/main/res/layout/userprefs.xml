@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical">
+
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="5sp"
+			android:layout_marginBottom="10sp" android:layout_marginLeft="12sp" android:layout_marginTop="5sp" 
+			android:text="Thanks for using Florida Trip Tracks App!  Please enter your user details here."
+			android:textStyle="bold">
+		</TextView>
+
+		<TextView
+		    android:id="@+id/TextView05"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="1. Gender"
+		    android:textStyle="bold" >
+		</TextView>		
+	    <RadioGroup android:id="@+id/RadioGroupGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+			<RadioButton
+		        android:id="@+id/ButtonMale"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Male"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonFemale"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonMale"
+		        android:text="Female"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />			
+		</RadioGroup>
+					
+		<TextView android:id="@+id/TextViewAge" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		        android:text="2. Age (select one)" android:layout_marginLeft="10sp" android:layout_alignParentLeft="true" 
+		        android:layout_marginTop="20sp" android:textStyle="bold">		        
+	    </TextView>		    	    
+		<RadioGroup android:id="@+id/RadioGroupAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+		<RadioButton
+		    android:id="@+id/RadioButtonAge"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="0-4" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonAge1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="5-15" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonAge2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="16-21" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonAge3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="22-49" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonAge4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="50-64" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonAge5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="65 or older" />
+		</RadioGroup>
+		
+		<RelativeLayout android:id="@+id/RelativeLayoutES" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		    <TextView android:id="@+id/TextViewES" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		        android:text="3. Employment Status (select all that apply)" android:layout_marginLeft="10sp" android:layout_alignParentLeft="true" 
+		        android:layout_marginTop="20sp" android:textStyle="bold">		        
+		    </TextView>
+		    	    
+		</RelativeLayout>
+		
+		<CheckBox
+		    android:id="@+id/CheckBoxES1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Full-time - 40 hours and more than 5 months of the year"
+		     />
+
+		<CheckBox
+		    android:id="@+id/CheckBoxES2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Part-time - 20 hours and more than 5 months of the year"
+		     />
+
+		<CheckBox
+		    android:id="@+id/CheckBoxES3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Employed less than 5 months of the year"
+		     />
+
+		<CheckBox
+		    android:id="@+id/CheckBoxES4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Unemployed - all civilians 16 years old and over neither at work nor with a job but not at work, actively looking for work, and able to accept a job"
+		     />
+
+		<CheckBox
+		    android:id="@+id/CheckBoxES5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Retired"
+		     />
+
+		<CheckBox
+		    android:id="@+id/CheckBoxES6"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Work at home"
+		     />
+		<CheckBox
+		    android:id="@+id/CheckBoxES7"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Homemaker"
+		     />
+
+		<CheckBox
+		    android:id="@+id/CheckBoxES8"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Self employed" 
+		    />		
+		
+		<TextView android:id="@+id/TextViewDays" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		        android:text="4. If you are employed, how many days per week do you make your work trips?" android:layout_marginLeft="10sp" android:layout_alignParentLeft="true" 
+		        android:layout_marginTop="20sp" android:textStyle="bold">		        
+	    </TextView>	
+		<RadioGroup android:id="@+id/RadioGroupDays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+		<RadioButton
+		    android:id="@+id/RadioButton1day"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="1 day" />
+
+		<RadioButton
+		    android:id="@+id/RadioButton2day"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="2 days" />
+
+		<RadioButton
+		    android:id="@+id/RadioButton3day"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="3 days" />
+
+		<RadioButton
+		    android:id="@+id/RadioButton4day"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="4 days" />
+
+		<RadioButton
+		    android:id="@+id/RadioButton5day"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="5 days" />
+
+		<RadioButton
+		    android:id="@+id/RadioButton6day"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="6 days" />
+		
+		<RadioButton
+		    android:id="@+id/RadioButton7day"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="7 days" />
+		</RadioGroup>
+		
+		<TextView
+		    android:id="@+id/TextViewStudent"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="5. Are you a student?"
+		    android:textStyle="bold" >
+		</TextView>
+		<RadioGroup android:id="@+id/RadioGroupStudent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+		    <RadioButton
+		        android:id="@+id/ButtonSYes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Yes"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonSNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonSYes"
+		        android:text="No"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+		</RadioGroup>
+		
+		<TextView android:id="@+id/TextViewStudentLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		        android:text="6. If you are a student, what level?" android:layout_marginLeft="10sp" android:layout_alignParentLeft="true" 
+		        android:layout_marginTop="20sp" android:textStyle="bold">		        
+		</TextView>		    	    
+		<RadioGroup android:id="@+id/RadioGroupStudentLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+		<RadioButton
+		    android:id="@+id/RadioButtonDaycare"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Preschool/Daycare" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonKindergarten"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Kindergarten" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonElementary"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Elementary school" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonMiddle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="Middle school" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonHigh"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="High school" />
+
+		<RadioButton
+		    android:id="@+id/RadioButtonCollege"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:text="College/University" />
+		</RadioGroup>
+		
+		<TextView
+		    android:id="@+id/TextViewDrLic"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="7. Do  you have a valid personal driver’s license?"
+		    android:textStyle="bold" >
+		</TextView>			
+		<RadioGroup android:id="@+id/RadioGroupDrLic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+			<RadioButton
+		        android:id="@+id/ButtonDrLicYes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Yes"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonDrLicNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonDrLicYes"
+		        android:text="No"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />			
+		</RadioGroup>	
+		
+		<TextView
+		    android:id="@+id/TextViewTransitPass"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="8. Do you own a transit pass?"
+		    android:textStyle="bold" >
+		</TextView>			
+		<RadioGroup android:id="@+id/RadioGroupTransitPass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+			<RadioButton
+		        android:id="@+id/ButtonTransitPassYes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Yes"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonTransitPassNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonTransitPassYes"
+		        android:text="No"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />			
+		</RadioGroup>	
+		
+		<TextView
+		    android:id="@+id/TextViewDisParkPass"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15sp"
+		    android:text="9. Do you own a disabled parking pass?"
+		    android:textStyle="bold" >
+		</TextView>			
+		<RadioGroup android:id="@+id/RadioGroupDisParkPass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="20sp" android:layout_weight="2" android:layout_alignParentRight="true" android:layout_marginRight="10sp">
+			<RadioButton
+		        android:id="@+id/ButtonDisParkPassYes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="17dp"
+		        android:text="Yes"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />
+
+		    <RadioButton
+		        android:id="@+id/ButtonDisParkPassNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="18dp"
+		        android:layout_toRightOf="@+id/ButtonDisParkPassYes"
+		        android:text="No"
+		        android:textSize="14sp"
+		        android:textStyle="bold" />			
+		</RadioGroup>	
+		
+		<Button android:id="@+id/saveButton" android:text="Save"  
+		    	android:layout_height="fill_parent" android:layout_weight="1" 
+		    	android:layout_width="fill_parent" android:textStyle="bold" 
+		    	android:textSize="18sp" android:onClick="saveUserPref"></Button>	
+		
+</LinearLayout>
+</ScrollView>

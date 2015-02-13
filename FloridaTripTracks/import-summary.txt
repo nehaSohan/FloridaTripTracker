@@ -1,0 +1,259 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .metadata\
+* .metadata\.lock
+* .metadata\.log
+* .metadata\.mylyn\
+* .metadata\.mylyn\repositories.xml.zip
+* .metadata\.plugins\
+* .metadata\.plugins\com.genuitec.eclipse.migration\
+* .metadata\.plugins\com.genuitec.eclipse.migration\workspace.properties
+* .metadata\.plugins\com.genuitec.eclipse.sqlexplorer\
+* .metadata\.plugins\com.genuitec.eclipse.sqlexplorer\ConnectionProfiles.xml
+* .metadata\.plugins\com.genuitec.eclipse.sqlexplorer\SQLDrivers.xml
+* .metadata\.plugins\com.genuitec.pulse.client.delivery.package.runtime\
+* .metadata\.plugins\com.genuitec.pulse.client.delivery.package.runtime\logs\
+* .metadata\.plugins\com.genuitec.pulse.client.delivery.package.runtime\logs\package-runtime-0.log
+* .metadata\.plugins\com.genuitec.pulse.client.delivery.package.runtime\logs\package-runtime-1.log
+* .metadata\.plugins\com.genuitec.pulse.client.delivery.package.runtime\logs\package-runtime-2.log
+* .metadata\.plugins\com.genuitec.pulse.client.delivery.package.runtime\logs\package-runtime-3.log
+* .metadata\.plugins\com.genuitec.pulse.client.delivery.package.runtime\logs\package-runtime-4.log
+* .metadata\.plugins\org.eclipse.cdt.core\
+* .metadata\.plugins\org.eclipse.cdt.core\.log
+* .metadata\.plugins\org.eclipse.cdt.make.core\
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.c
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.cpp
+* .metadata\.plugins\org.eclipse.core.resources\
+* .metadata\.plugins\org.eclipse.core.resources\.root\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\history.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.index
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\10.tree
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources
+* .metadata\.plugins\org.eclipse.core.runtime\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.android.ide.eclipse.adt.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.collabnet.subversion.merge.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.derby.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.easie.jboss3.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.easie.jboss4.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.easie.jboss5.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.easie.jboss6.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.examples.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.jsf.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.eclipse.wizards.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.myeclipse.compatibility.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.genuitec.pulse.client.delivery.package.runtime.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\net.jeeeyul.eclipse.themes.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.cdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.core.resources.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.core.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.launching.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.m2e.discovery.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.mylyn.context.core.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.mylyn.monitor.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.mylyn.tasks.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.team.cvs.core.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.team.cvs.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.team.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.ide.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.workbench.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.springsource.ide.eclipse.commons.frameworks.core.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.tigris.subversion.subclipse.tools.usage.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.tigris.subversion.subclipse.ui.prefs
+* .metadata\.plugins\org.eclipse.e4.workbench\
+* .metadata\.plugins\org.eclipse.e4.workbench\workbench.xmi
+* .metadata\.plugins\org.eclipse.equinox.p2.ui\
+* .metadata\.plugins\org.eclipse.equinox.p2.ui\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.jdt.core\
+* .metadata\.plugins\org.eclipse.jdt.core\invalidArchivesCache
+* .metadata\.plugins\org.eclipse.jdt.core\javaLikeNames.txt
+* .metadata\.plugins\org.eclipse.jdt.core\nonChainingJarsCache
+* .metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat
+* .metadata\.plugins\org.eclipse.jdt.launching\
+* .metadata\.plugins\org.eclipse.jdt.launching\.install.xml
+* .metadata\.plugins\org.eclipse.jdt.launching\libraryInfos.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\
+* .metadata\.plugins\org.eclipse.jdt.ui\OpenTypeHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\QualifiedTypeNameHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.m2e.core\
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_dw.cfs
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.fdt
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.fdx
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.fnm
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.frq
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.nrm
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.prx
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.tii
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\_e2.tis
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\nexus-maven-repository-index.properties
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\segments.gen
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\segments_9d
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\26522e0d83a422eed93329ece7565cfc\timestamp
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\_a.cfs
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\segments.gen
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\segments_b
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\830bc118332e77292949ed1e6d2fabe0\write.lock
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\e2538c214e483251ce5108518f5243f9\
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\e2538c214e483251ce5108518f5243f9\_a.cfs
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\e2538c214e483251ce5108518f5243f9\segments.gen
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\e2538c214e483251ce5108518f5243f9\segments_b
+* .metadata\.plugins\org.eclipse.m2e.core\nexus\e2538c214e483251ce5108518f5243f9\write.lock
+* .metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser
+* .metadata\.plugins\org.eclipse.m2e.logback.configuration\
+* .metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+* .metadata\.plugins\org.eclipse.m2e.logback.configuration\logback.1.4.0.20130601-0317.xml
+* .metadata\.plugins\org.eclipse.team.cvs.ui\
+* .metadata\.plugins\org.eclipse.team.cvs.ui\commentTemplates.xml
+* .metadata\.plugins\org.eclipse.team.cvs.ui\commitCommentHistory.xml
+* .metadata\.plugins\org.eclipse.team.cvs.ui\repositoriesView.xml
+* .metadata\.plugins\org.eclipse.ui.ide\
+* .metadata\.plugins\org.eclipse.ui.ide\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\
+* .metadata\.plugins\org.eclipse.ui.workbench\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\workingsets.xml
+* .metadata\.plugins\org.eclipse.wst.common.snippets\
+* .metadata\.plugins\org.eclipse.wst.common.snippets\hidden.xml
+* .metadata\.plugins\org.eclipse.wst.common.snippets\user.xml
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.edu.emory.mathcs.backport-3.1.0.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.net.sf.cglib-2.1.3.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.org.aopalliance-1.0.0.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.org.apache.log4j-1.2.15.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.org.objectweb.asm-2.2.3.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.slf4j.api-1.5.6.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.slf4j.log4j-1.5.6.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\com.springsource.slf4j.org.apache.commons.logging-1.5.6.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.eclipse.osgi-3.5.1.R35x_v20091005.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.aop-3.0.1.RELEASE-A.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.beans-3.0.1.RELEASE-A.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.context-3.0.1.RELEASE-A.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.context.support-3.0.1.RELEASE-A.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.core-3.0.1.RELEASE-A.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.osgi.core-1.2.1.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.osgi.extender-1.2.1.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.osgi.extensions.annotation-1.2.1.jar
+* .metadata\.plugins\org.springframework.ide.eclipse.osgi.targetdefinition\3.3.0.201307091516-RELEASE\target\org.springframework.osgi.io-1.2.1.jar
+* .metadata\version.ini
+* COPYING
+* README
+* art\
+* art\android-icon.png
+* art\android-icon.svg
+* art\androidtrackshelp.html
+* art\dot48.png
+* art\icon48.png
+* art\pin-green.png
+* art\pin-purple.png
+* art\pin-yellow3.png
+* tests\
+* tests\.classpath
+* tests\.project
+* tests\.settings\
+* tests\.settings\org.eclipse.jdt.core.prefs
+* tests\AndroidManifest.xml
+* tests\bin\
+* tests\bin\AndroidManifest.xml
+* tests\bin\classes\
+* tests\bin\classes\org\
+* tests\bin\classes\org\sfcta\
+* tests\bin\classes\org\sfcta\cycletracks\
+* tests\bin\classes\org\sfcta\cycletracks\test\
+* tests\bin\classes\org\sfcta\cycletracks\test\BuildConfig.class
+* tests\bin\classes\org\sfcta\cycletracks\test\R$attr.class
+* tests\bin\classes\org\sfcta\cycletracks\test\R$drawable.class
+* tests\bin\classes\org\sfcta\cycletracks\test\R$layout.class
+* tests\bin\classes\org\sfcta\cycletracks\test\R$string.class
+* tests\bin\classes\org\sfcta\cycletracks\test\R.class
+* tests\bin\jarlist.cache
+* tests\gen\
+* tests\gen\org\
+* tests\gen\org\sfcta\
+* tests\gen\org\sfcta\cycletracks\
+* tests\gen\org\sfcta\cycletracks\test\
+* tests\gen\org\sfcta\cycletracks\test\BuildConfig.java
+* tests\gen\org\sfcta\cycletracks\test\R.java
+* tests\project.properties
+* tests\res\
+* tests\res\drawable\
+* tests\res\drawable\icon.png
+* tests\res\layout\
+* tests\res\layout\main.xml
+* tests\res\values\
+* tests\res\values\strings.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+google-play-services_lib => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

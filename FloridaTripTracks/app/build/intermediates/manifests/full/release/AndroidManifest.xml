@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.urs.triptracks"
+    android:versionCode="6"
+    android:versionName="1.08" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:normalScreens="true" />
+
+    <permission
+        android:name="com.urs.triptracks.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.urs.triptracks.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/dot72"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.urs.triptracks.MainInput"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urs.triptracks.RecordingActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/recording_title"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.urs.triptracks.SaveTrip"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.urs.triptracks.ShowMap"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.urs.triptracks.UserInfoActivity"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance" />
+
+        <service
+            android:name="com.urs.triptracks.RecordingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDGp0V9cYI27qB2rM1994S3U69mFkreWwk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
